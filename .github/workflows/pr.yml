@@ -14,4 +14,4 @@ jobs:
 
       - name: Run a script
         run: |
-          echo Hello from main repo for PR
+          echo Hello from **forked** repo for PR
