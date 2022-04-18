@@ -1,20 +1,17 @@
-name: CI
+name: PR
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
-
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
 
       - name: Run a script
         run: |
-          echo Hello from main repo
+          echo Hello from main repo for PR

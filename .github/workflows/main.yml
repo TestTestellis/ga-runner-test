@@ -1,0 +1,17 @@
+name: Main
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run a script
+        run: |
+          echo Hello from main repo for Main
